@@ -12,7 +12,7 @@ def heisman_predictor(player_stats):
     # Calculate player's total score based on their stats
     total_scores = []
     for player in player_stats:
-        total_score = int(player['G']) + int(player['Cmp']) + int(player['TD']) + int(player['Yds'])
+        total_score = int(player['G']) + int(player['Cmp']) + int(player['TD']) + int(player['Yds']) # Probably could change out for different columns
         total_scores.append(total_score)
 
     # Check if each player has enough stats to be considered for the Heisman
