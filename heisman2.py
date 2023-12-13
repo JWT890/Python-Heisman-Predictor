@@ -19,6 +19,8 @@ def heisman_predictor(player_stats):
     results = []
     for i in range(len(player_stats)):
         if total_scores[i] >= 1000:
+            results.append(f"{player_stats[i]['Player']} is this years potential Heisman winner!")
+        if total_scores[i] >= 500:
             results.append(f"{player_stats[i]['Player']} is a strong contender for the Heisman Trophy!")
         else:
             results.append(f"{player_stats[i]['Player']} needs to improve their stats to be considered for the Heisman.")
