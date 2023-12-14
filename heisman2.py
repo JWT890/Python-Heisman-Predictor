@@ -28,7 +28,7 @@ def heisman_predictor(player_stats):
     return results
 
 # Example usage
-filename = '2007stats.csv'
+filename = '2011stats.csv' # Replace with your own csv file
 player_stats = read_player_stats(filename)
 results = heisman_predictor(player_stats)
 for result in results:
